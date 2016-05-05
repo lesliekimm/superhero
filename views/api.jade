@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  br
+  form.form-inline(method='post', action='/api/superheros')
+    .form-group
+      label Superhero name 
+      input.form-control(name='name', required)
+    button.btn.btn-default(type='submit') Save
+  hr
+  br
+  h2 All Superheros
+  ul
+    each superhero in superheros
+      li #[a(href='superhero/#{superhero.id}') #{superhero.name}]
