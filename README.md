@@ -4,6 +4,8 @@ basic CRUD app using Node, Express, Jade and MongoDB using Michael Herman's [tut
 note: I used Jade instead of Swig
 
 ### download instructions
-* clone this repo
+* clone this repo ```git clone git@github.com:lesliekimm/superhero.git```
+* run ```npm install```
 * run ```mongod```
-* open ```http://localhost:3000```
+* cd into local directory and run ```nodemon```
+* open ```http://localhost:3000/api/superheros```
